@@ -1,0 +1,13 @@
+server:
+  port: 17624
+
+spring:
+  profiles:
+    active: default, swagger
+  datasource:
+    url: jdbc:hsqldb:hsql://localhost/testdb
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
