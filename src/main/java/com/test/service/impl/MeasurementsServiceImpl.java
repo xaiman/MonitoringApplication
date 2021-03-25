@@ -20,6 +20,7 @@ public class MeasurementsServiceImpl implements com.test.service.MeasurementsSer
     @Override
     public List<MeasurementsModel> getUserHistory(String userName) {
         log.info("getUserHistory service method");
+        log.info("submodule check");
         return measurementsRepository.findByUserName(userName);
     }
 
