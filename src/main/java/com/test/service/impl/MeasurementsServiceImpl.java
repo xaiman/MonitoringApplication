@@ -21,6 +21,7 @@ public class MeasurementsServiceImpl implements com.test.service.MeasurementsSer
     public List<MeasurementsModel> getUserHistory(String userName) {
         log.info("getUserHistory service method");
         log.info("submodule check");
+        log.info("submodule second check");
         return measurementsRepository.findByUserName(userName);
     }
 
